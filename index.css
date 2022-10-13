@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+* {
+  margin: 0.0001px;
+  padding: 0.0001px;
+}
+
+html {
+  overflow-y: hidden;
+}
+
+.form {
+  position: absolute;
+  bottom: 3.5%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.form > input {
+  outline: none;
+  height: 30px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.form > input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.form > button {
+  width: 50px;
+  border-radius: 20px;
+  background: hsl(0, 36%, 70%);
+  margin-left: -10%;
+  border: none;
+}
+
+.continer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Josefin Sans', sans-serif;
+  background: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%), Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+}
+
+.container_header {
+  padding: 2rem;
+  position: relative;
+}
+
+.container_header_figure > img {
+  width: 35%;
+} 
+
+.container_main_figure > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.text_container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.text_container > h2 {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 40px;
+  color: hsl(0, 6%, 24%);
+  letter-spacing: 10px;
+}
+
+.text_container > p {
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+  letter-spacing: 1.2px;
+}
+
+.text_conteiner_change {
+  color: hsl(0, 36%, 70%);
+}
+
+@media only screen and (min-width: 720px) {
+  .container_main {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+  }
+
+  .container_header {
+    padding-left: 3.5rem;
+  }
+
+  .container_header_figure > img {
+    width: 12%;
+  } 
+
+  .text_container > h2 {
+    font-size: 64px;
+  }
+
+  .text_container > p {
+    width: 70%;
+    line-height: 2.0;
+    padding-left: 1.5rem;
+  }
+
+  .continer {
+    background: url(./images/bg-pattern-desktop.svg) no-repeat;
+    background-size: contain;
+  }
+
+  .container_main_figure > img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text_container > h2 {
+    text-align: left;
+  }
+  
+  .container_main_figure{
+    margin-top: -12%;
+  }
+
+  .text_container > p {
+    text-align: left;
+  }
+
+  .form {
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    padding-left: 3.5rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .form > input {
+    outline: none;
+    height: 50px;
+    width: 30%;
+    padding: 25px;
+    border-radius: 20px;
+  }
+  
+  .form > input::placeholder {
+    color: hsl(0, 36%, 70%);
+  }
+  
+  .form > button {
+    width: 80px;
+    border-radius: 20px;
+    background: hsl(0, 36%, 70%);
+    margin-left: -5%;
+    border: none;
+  }
+}
